@@ -1,0 +1,82 @@
+# Fourth Phase Sp. z o.o.
+
+> Prefabrykacja szaf sterowniczych i rozdzielnic nN do 6300 A według dokumentacji klienta. PN-EN 61439, CE, protokół z testów. Górny Śląsk, dostawy w UE.
+
+Szafy sterownicze i rozdzielnice nN, budowane według Waszej dokumentacji. Wycena w 48 h na podstawie schematu. Każda szafa z protokołem z testów i deklaracją zgodności CE.
+
+## O firmie
+
+Jesteśmy nową firmą, ale nie nowymi w branży. Zespół inżynierów i techników od lat prefabrykuje szafy sterownicze i rozdzielnice dla przemysłu.
+
+Teraz robimy to na własny rachunek: z wolnymi mocami przerobowymi, krótkimi terminami i bez pośredników między Wami a osobą, która montuje szafę.
+
+## Dlaczego teraz
+
+- **Wolne moce przerobowe**: Nie czekacie w kolejce za dużymi zleceniami. Termin podajemy razem z wyceną.
+- **Bezpośredni kontakt**: Rozmawiacie z osobą, która prowadzi projekt od schematu do odbioru.
+- **Dokumentacja bez skrótów**: CE, PN-EN 61439 i protokół z testów do każdej szafy, od pierwszego zlecenia.
+
+## Dla kogo pracujemy
+
+### Integratorzy automatyki
+
+Macie projekt w EPLAN, brakuje rąk do montażu
+
+- Pracujemy na Waszej dokumentacji i liście aparatury
+- Pojedyncze szafy i serie, termin razem z wyceną
+- Oznaczenia i dokumentacja według Waszego standardu
+
+### Zakłady i utrzymanie ruchu
+
+Nowa linia, rozbudowa albo przeróbka rozdzielnicy
+
+- Jesteśmy na Śląsku, blisko Waszego zakładu
+- Dokumentacja CE i PN-EN 61439 gotowa do audytu
+- Kontakt bezpośrednio z osobą prowadzącą projekt
+
+## Co budujemy
+
+- **Szafy sterownicze**: Dla automatyki przemysłowej, maszyn i linii technologicznych.
+- **Rozdzielnice nN do 6300 A**: Od zasilania głównego po dystrybucję energii, zgodnie z PN-EN 61439.
+- **Szafy IT**: Dla serwerowni, sieci i systemów niskoprądowych.
+- **Ciężkie aplikacje**: Duże prądy, zapylenie, wilgoć i praca na trzy zmiany.
+
+## Jakość i dokumentacja
+
+Każda szafa wyjeżdża z protokołem z testów.
+
+Mierzymy izolację i ciągłość PE, sprawdzamy działanie i montaż. Wyniki trafiają do protokołu razem z deklaracją CE.
+
+- Deklaracja zgodności CE
+- Dokumentacja zgodna z PN-EN 61439
+- Protokół z pomiaru izolacji i ciągłości PE
+- Zmiany w schemacie tylko po uzgodnieniu na piśmie
+
+## Najczęstsze pytania
+
+**Co trzeba przesłać do wyceny?**
+Schemat elektryczny (EPLAN, PDF lub DWG), listę aparatury, liczbę sztuk i oczekiwany termin. Brakujące informacje uzupełnimy w rozmowie.
+
+**Jesteście nową firmą. Skąd mam wiedzieć, że dacie radę?**
+Firma jest nowa, zespół nie. Chętnie pokażemy wzór protokołu i dokumentacji, a odbiór szafy można zrobić u nas przed wysyłką.
+
+**Ile trwa wycena i realizacja?**
+Wycena do 48 godzin. Termin realizacji podajemy razem z wyceną, zależnie od dostępności aparatury.
+
+**Czy kupujecie aparaturę, czy pracujecie na powierzonej?**
+Oba warianty są możliwe.
+
+**Czy realizujecie dostawy poza Polskę?**
+Tak, na terenie całej Unii Europejskiej.
+
+## Kontakt
+
+- Telefon: +48 667 296 405
+- E-mail: biuro@fourthphase.pl
+- Adres: ul. Solidarności 9 lok. 33, 41-600 Świętochłowice
+- Dane rejestrowe: NIP 6272805637, KRS 0001222608, REGON 543943095
+
+## Strony
+
+- [Strona główna](https://fourthphase.pl/)
+- [Polityka prywatności](https://fourthphase.pl/polityka-prywatnosci.html)

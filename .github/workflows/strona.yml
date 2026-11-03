@@ -1,0 +1,57 @@
+# Kontrola i publikacja strony na GitHub Pages.
+# Po każdej zmianie w gałęzi main: (1) sprawdza stronę, (2) generuje FAQ dla wyszukiwarek, llms.txt i sitemap.xml,
+# (3) publikuje tylko pliki strony. Jeśli kontrola znajdzie błąd, strona NIE jest publikowana (zostaje poprzednia wersja),
+# a GitHub wysyła e-mail do osoby, która zapisała zmianę, z opisem błędu.
+# Jednorazowe ustawienie: Settings > Pages > Source: GitHub Actions.
+name: Strona
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  kontrola-i-budowa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kontrola strony
+        run: python3 tools/check_site.py
+      - name: Generowanie FAQ, llms.txt i sitemap.xml
+        run: python3 tools/build_seo.py
+      - name: Zebranie plików publicznych
+        run: |
+          mkdir _site
+          cp index.html polityka-prywatnosci.html 404.html styles.css app.js config.js robots.txt sitemap.xml llms.txt _site/
+          cp -r img fonts js _site/
+          for f in CNAME favicon.ico; do if [ -f "$f" ]; then cp "$f" _site/; fi; done
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publikacja:
+    if: github.event_name != 'pull_request'
+    needs: kontrola-i-budowa
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
