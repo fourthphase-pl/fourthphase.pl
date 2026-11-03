@@ -210,6 +210,11 @@ footer .legal button{background:none;border:0;padding:0;font:inherit;color:var(-
 .hero-content > :nth-child(3){animation-delay:.16s}
 .hero-content > :nth-child(4){animation-delay:.24s}
 
+/* Paralaks na pierwszym ekranie: zdjęcie i tekst przesuwają się wolniej niż strona (włącza app.js klasą parallax) */
+.hero-img,.hero-content{translate:0 0}
+.hero.parallax .hero-img{top:-18%;height:118%;translate:0 var(--hero-img,0px);will-change:translate}
+.hero.parallax .hero-content{translate:0 var(--hero-text,0px);will-change:translate}
+
 .site-head{transition:box-shadow .25s ease-out}
 .site-head.scrolled{box-shadow:0 2px 14px rgba(23,20,20,.08)}
 .top nav a{padding-bottom:2px;background:linear-gradient(currentColor,currentColor) left bottom/0 1px no-repeat;transition:background-size .25s ease-out,color .15s}

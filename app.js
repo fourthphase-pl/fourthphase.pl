@@ -119,6 +119,24 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !('IntersectionObserver' in window)) return;
 
+  // paralaks pierwszego ekranu: zdjęcie o 18% wysokości, tekst o 8% wolniej niż przewijanie
+  var hero = document.querySelector('.hero');
+  if (hero) {
+    hero.classList.add('parallax');
+    var ticking = false;
+    var move = function(){
+      var h = hero.offsetHeight || 1;
+      var p = Math.min(Math.max(window.scrollY / h, 0), 1);
+      hero.style.setProperty('--hero-img', (p * h * 0.18).toFixed(1) + 'px');
+      hero.style.setProperty('--hero-text', (p * h * 0.08).toFixed(1) + 'px');
+      ticking = false;
+    };
+    window.addEventListener('scroll', function(){
+      if (!ticking && window.scrollY < hero.offsetHeight * 1.2) { ticking = true; requestAnimationFrame(move); }
+    }, {passive: true});
+    move();
+  }
+
   var SELECTOR = '.head, .cols4 > .audience, .audience-cta, .cols2 > *, .band .in > *, footer .in > *';
   var seen = [];
   var io = new IntersectionObserver(function(entries){
