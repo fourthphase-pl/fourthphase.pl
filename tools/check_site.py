@@ -155,9 +155,14 @@ for name in PAGES:
 
     for data, line in p.ld:
         try:
-            json.loads(data)
+            ld = json.loads(data)
         except ValueError as e:
             report("error", name, line, "Dane strukturalne (JSON-LD) są niepoprawne: %s." % e)
+            continue
+        ld_tel = ld.get("telephone") if isinstance(ld, dict) else None
+        link_tels = {h[4:] for h, _ in p.links if h.startswith("tel:")}
+        if ld_tel and link_tels and ld_tel.replace(" ", "") not in link_tels:
+            report("error", name, line, "Numer telefonu w danych dla wyszukiwarek (%s) różni się od numeru w linkach (%s)." % (ld_tel, ", ".join(sorted(link_tels))))
 
     # linki i pliki
     for href, line in p.links:

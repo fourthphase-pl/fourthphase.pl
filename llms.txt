@@ -2,37 +2,54 @@
 
 > Prefabrykacja szaf sterowniczych i rozdzielnic nN do 6300 A według dokumentacji klienta. PN-EN 61439, CE, protokół z testów. Górny Śląsk, dostawy w UE.
 
-Szafy sterownicze i rozdzielnice nN, budowane według Waszej dokumentacji. Wycena w 48 h na podstawie schematu. Każda szafa z protokołem z testów i deklaracją zgodności CE.
+Prefabrykator szafy sterowniczych i rozdzielnic nN z Górnego Śląska. Twój Partner w Czwartej Rewolucji Przemysłowej.
 
 ## O firmie
 
-Jesteśmy nową firmą, ale nie nowymi w branży. Zespół inżynierów i techników od lat prefabrykuje szafy sterownicze i rozdzielnice dla przemysłu.
+Jesteśmy firmą składającą się z zespołu inżynierów o bogatym doświadczeniu zarówno w prefabrykacji, jak i w pracach obiektowych.
 
-Teraz robimy to na własny rachunek: z wolnymi mocami przerobowymi, krótkimi terminami i bez pośredników między Wami a osobą, która montuje szafę.
+Charakteryzują nas dokładność, terminowość i konkurencyjne ceny.
 
 ## Dlaczego teraz
 
-- **Wolne moce przerobowe**: Nie czekacie w kolejce za dużymi zleceniami. Termin podajemy razem z wyceną.
-- **Bezpośredni kontakt**: Rozmawiacie z osobą, która prowadzi projekt od schematu do odbioru.
-- **Dokumentacja bez skrótów**: CE, PN-EN 61439 i protokół z testów do każdej szafy, od pierwszego zlecenia.
+- **Stawiamy na rozwój**: Współpracujemy z wszystkimi firmami, małymi czy dużymi, rozwijamy się wspólnie z naszymi partnerami.
+- **Bezpośredni kontakt**: Każdy projekt prowadzi dedykowana osoba, która dobrze poinformuje cię o jego statusie.
+- **Elastyczny standard**: Dopasowywujemy produkt końcowy do standardu klienta, jeżeli takiego nie ma, sami go dla ciebie stworzymy.
+- **Zewnętrzne wsparcie**: Dzięki współpracy z firmami z różnych sektorów, jesteśmy w stanie zapewnić szerszy zakres usług jak prace obiektowe, czy projekt abyście wy mieli spokojniejszą głowę.
 
 ## Dla kogo pracujemy
 
 ### Integratorzy automatyki
 
-Macie projekt w EPLAN, brakuje rąk do montażu
+Szafy automatyki, z możliwością posadowienia i podłączenia na obiekcie
 
-- Pracujemy na Waszej dokumentacji i liście aparatury
-- Pojedyncze szafy i serie, termin razem z wyceną
-- Oznaczenia i dokumentacja według Waszego standardu
+- Pojedyncze szafy i serie
+- Pulpity sterownicze
+- Panele operacyjne
 
-### Zakłady i utrzymanie ruchu
+### Producenci maszyn
 
-Nowa linia, rozbudowa albo przeróbka rozdzielnicy
+Powtarzalne szafy sterownicze, dostosowane do Twoich wymagań i standardów
 
-- Jesteśmy na Śląsku, blisko Waszego zakładu
-- Dokumentacja CE i PN-EN 61439 gotowa do audytu
-- Kontakt bezpośrednio z osobą prowadzącą projekt
+- Seryjny montaż szaf i pulpitów
+- Rozdzielnice zasilające dedykowane do maszyn
+- Prefabrykacja wiązek i okablowania
+
+### Przemysł i zakłady produkcyjne
+
+Modernizacja, rozbudowa oraz niezawodne zasilanie linii produkcyjnych
+
+- Szafy zasilające i rozdzielnice nN
+- Systemy sterowania procesami przemysłowymi
+- Wymiana i prefabrykacja szaf w trakcie przestojów
+
+### Data Center
+
+Gwarancja ciągłości zasilania i bezpieczne rozdzielnice krytyczne
+
+- Rozdzielnice nN główne i podrozdzielnice zasilania gwarantowanego
+- Systemy dystrybucji zasilania (PDU)
+- Szafy sterowania infrastrukturą techniczną i HVAC
 
 ## Co budujemy
 
@@ -54,24 +71,24 @@ Mierzymy izolację i ciągłość PE, sprawdzamy działanie i montaż. Wyniki tr
 
 ## Najczęstsze pytania
 
-**Co trzeba przesłać do wyceny?**
-Schemat elektryczny (EPLAN, PDF lub DWG), listę aparatury, liczbę sztuk i oczekiwany termin. Brakujące informacje uzupełnimy w rozmowie.
+**Według jakiej normy wykonujecie?**
+PN-EN 61439.
 
-**Jesteście nową firmą. Skąd mam wiedzieć, że dacie radę?**
-Firma jest nowa, zespół nie. Chętnie pokażemy wzór protokołu i dokumentacji, a odbiór szafy można zrobić u nas przed wysyłką.
+**Czy pracujecie na materiale powierzonym?**
+Tak, pracujemy zarówno na materiale od klienta jak i mamy możliwość zakupu go sami, zależnie od tego co jest korzystniejsze dla klienta.
 
 **Ile trwa wycena i realizacja?**
-Wycena do 48 godzin. Termin realizacji podajemy razem z wyceną, zależnie od dostępności aparatury.
+Czas przygotowania oferty jest silnie uzależniony od jej wielkości. Termin realizacji podajemy razem z wyceną, zależnie od dostępności aparatury.
 
-**Czy kupujecie aparaturę, czy pracujecie na powierzonej?**
-Oba warianty są możliwe.
+**Czy możemy zamówić u was pakowanie specjalne? (np. transport Morski/Lotniczy)**
+Tak, oferujemy takie usługi.
 
 **Czy realizujecie dostawy poza Polskę?**
 Tak, na terenie całej Unii Europejskiej.
 
 ## Kontakt
 
-- Telefon: +48 667 296 405
+- Telefon: +48 780 727 190
 - E-mail: biuro@fourthphase.pl
 - Adres: ul. Solidarności 9 lok. 33, 41-600 Świętochłowice
 - Dane rejestrowe: NIP 6272805637, KRS 0001222608, REGON 543943095
