@@ -103,3 +103,40 @@
   if (saved === 'granted') loadClarity();
   else if (saved !== 'denied') banner.hidden = false;
 })();
+
+/* ===== Delikatne animacje: pojawianie się sekcji przy przewijaniu i cień górnego paska ===== */
+(function(){
+  // cień pod górnym paskiem po przewinięciu strony
+  var head = document.querySelector('.site-head');
+  if (head) {
+    var waiting = false;
+    var update = function(){ head.classList.toggle('scrolled', window.scrollY > 8); waiting = false; };
+    window.addEventListener('scroll', function(){ if (!waiting) { waiting = true; requestAnimationFrame(update); } }, {passive: true});
+    update();
+  }
+
+  // pojawianie się bloków: tylko gdy przeglądarka to obsługuje i użytkownik nie wyłączył ruchu
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+
+  var SELECTOR = '.head, .cols4 > .audience, .audience-cta, .cols2 > *, .band .in > *, footer .in > *';
+  var seen = [];
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('shown'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.08, rootMargin: '0px 0px -6% 0px'});
+
+  Array.prototype.forEach.call(document.querySelectorAll(SELECTOR), function(el){
+    if (seen.indexOf(el) !== -1) return;
+    seen.push(el);
+    // to, co już jest widoczne po wejściu na stronę, zostaje bez zmian (bez migotania)
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.92) return;
+    // kolejne elementy w tym samym rzędzie pojawiają się z krótkim opóźnieniem
+    var n = 0, s = el.previousElementSibling;
+    while (s && n < 4) { n++; s = s.previousElementSibling; }
+    el.style.setProperty('--d', (n * 90) + 'ms');
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+})();
