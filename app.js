@@ -4,6 +4,10 @@
   var CFG = window.FP_CONFIG || {};
   var $ = function(id){ return document.getElementById(id); };
   var KEY_OK = function(v){ return v && v.indexOf('WKLEJ_') !== 0; };
+  // numer telefonu do komunikatów błędów: ten sam, który jest w linku tel: na stronie (zmieniany w HTML)
+  var telLink = document.querySelector('a[href^="tel:"]');
+  var PHONE = telLink ? telLink.textContent.trim() : '';
+  var CALL = PHONE ? ', ewentualnie zadzwoń: ' + PHONE + '.' : '.';
 
   /* ===== Formularz wyceny ===== */
   var form = $('quote');
@@ -29,7 +33,7 @@
       if (form.querySelector('[name=botcheck]').checked) { done(); return; }
 
       if (!KEY_OK(CFG.formAccessKey)) {
-        showError('Formularz nie jest jeszcze uruchomiony. Napisz na biuro@fourthphase.pl albo zadzwoń: +48 667 296 405.');
+        showError('Formularz nie jest jeszcze uruchomiony. Napisz na biuro@fourthphase.pl' + CALL);
         return;
       }
 
@@ -54,7 +58,7 @@
           throw new Error((res.j && res.j.message) || 'Błąd wysyłki');
         })
         .catch(function(){
-          showError('Nie udało się wysłać zapytania. Spróbuj ponownie albo napisz na biuro@fourthphase.pl, ewentualnie zadzwoń: +48 667 296 405.');
+          showError('Nie udało się wysłać zapytania. Spróbuj ponownie albo napisz na biuro@fourthphase.pl' + CALL);
         })
         .then(function(){ submit.removeAttribute('disabled'); submit.textContent = label; });
     });
