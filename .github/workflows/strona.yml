@@ -39,7 +39,7 @@ jobs:
           mkdir _site
           cp index.html polityka-prywatnosci.html 404.html styles.css app.js config.js robots.txt sitemap.xml llms.txt _site/
           cp -r img fonts js _site/
-          for f in CNAME favicon.ico; do if [ -f "$f" ]; then cp "$f" _site/; fi; done
+          for f in CNAME favicon.ico [0-9a-f]*.txt; do if [ -f "$f" ]; then cp "$f" _site/; fi; done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -55,3 +55,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    if: github.event_name != 'pull_request'
+    needs: publikacja
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Powiadomienie wyszukiwarek (IndexNow)
+        continue-on-error: true
+        run: python3 tools/indexnow.py
