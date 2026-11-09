@@ -89,9 +89,10 @@ def build_llms(raw):
         out += ["## O firmie", ""] + [p + "\n" for p in paras]
 
     why = section(raw, "Dlaczego teraz")
+    why_label = re.search(r'<p class="label">(.*?)</p>', why, re.S)
     pairs = re.findall(r'<p class="h3">(.*?)</p>\s*<p class="small">(.*?)</p>', why, re.S)
     if pairs:
-        out += ["## Dlaczego teraz", ""] + ["- **%s**: %s" % (text(a), text(b)) for a, b in pairs] + [""]
+        out += ["## " + (text(why_label.group(1)) if why_label else "Dlaczego my"), ""] + ["- **%s**: %s" % (text(a), text(b)) for a, b in pairs] + [""]
 
     who = section(raw, "Dla kogo pracujemy")
     blocks = re.findall(r'<div class="audience">(.*?)</ul>', who, re.S)

@@ -1,8 +1,8 @@
 # Fourth Phase Sp. z o.o.
 
-> Prefabrykacja szaf sterowniczych i rozdzielnic nN do 6300 A według dokumentacji klienta. PN-EN 61439, CE, protokół z testów. Górny Śląsk, dostawy w UE.
+> Prefabrykacja szaf sterowniczych i rozdzielnic nN do 6300 A zgodnie z PN-EN 61439. Dla integratorów, producentów maszyn i przemysłu. Górny Śląsk, dostawy w UE.
 
-Prefabrykator szafy sterowniczych i rozdzielnic nN z Górnego Śląska. Twój Partner w Czwartej Rewolucji Przemysłowej.
+Prefabrykator szaf sterowniczych i rozdzielnic nN z Górnego Śląska. Twój Partner w Czwartej Rewolucji Przemysłowej.
 
 ## O firmie
 
@@ -10,7 +10,7 @@ Jesteśmy firmą składającą się z zespołu inżynierów o bogatym doświadcz
 
 Charakteryzują nas dokładność, terminowość i konkurencyjne ceny.
 
-## Dlaczego teraz
+## Dlaczego my
 
 - **Stawiamy na rozwój**: Współpracujemy z wszystkimi firmami, małymi czy dużymi, rozwijamy się wspólnie z naszymi partnerami.
 - **Elastyczny standard**: Dopasowywujemy produkt końcowy do standardu klienta, jeżeli takiego nie ma, sami go dla ciebie stworzymy.

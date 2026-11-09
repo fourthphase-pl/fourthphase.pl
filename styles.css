@@ -211,7 +211,8 @@ footer .legal button{background:none;border:0;padding:0;font:inherit;color:var(-
 
 /* Paralaks na pierwszym ekranie: zdjęcie i tekst przesuwają się wolniej niż strona (włącza app.js klasą parallax) */
 .hero-img,.hero-content{translate:0 0}
-.hero.parallax .hero-img{top:-18%;height:118%;translate:0 var(--hero-img,0px);will-change:translate}
+@media (prefers-reduced-motion:no-preference){.hero-img{top:-18%;height:118%}}
+.hero.parallax .hero-img{translate:0 var(--hero-img,0px);will-change:translate}
 .hero.parallax .hero-content{translate:0 var(--hero-text,0px);will-change:translate}
 
 .site-head{transition:box-shadow .25s ease-out}
